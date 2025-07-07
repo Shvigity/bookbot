@@ -4,7 +4,7 @@ import sys
 def main():
     if sys.argv[1:]:
         book_path = sys.argv[1]
-        
+
         print("========= BOOKBOT =========")
         whole_document = get_book_text(book_path)
         
@@ -20,8 +20,8 @@ def main():
 
     else:
         print("No book path provided. Please provide a path to a book file.")
-        print("Usage: python main.py <path_to_book>")
-        return 1
+        print("Usage: python3 main.py <path_to_book>")
+        sys.exit(1)
 
     
 
